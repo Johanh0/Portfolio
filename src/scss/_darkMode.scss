@@ -1,0 +1,17 @@
+.darkMode {
+    // Background Dark
+    body {
+        background: map-get($map: $colors, $key: black-color) !important;
+    }
+
+    // Background Light
+    .line1, .line2 {
+        background: map-get($map: $colors, $key: white-color);
+    }
+
+    // Text Light
+    p, a, i {
+        color: map-get($map: $colors, $key: white-color) !important;
+    }
+
+}

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #2A2A2A;
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none;
+  color: #2A2A2A; }
+
+li {
+  list-style: none; }
+
+.line1, .line2 {
+  background: #2A2A2A; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 45px 55px;
+  font-size: 2rem; }
+  header .header-logo a {
+    font-weight: bold; }
+  header .header-links nav ul {
+    display: flex;
+    gap: 50px; }
+  header .header-access {
+    display: flex;
+    align-items: center;
+    gap: 35px; }
+    header .header-access #darkMode-btn {
+      cursor: pointer;
+      font-size: 2.5rem; }
+    header .header-access #burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 35px;
+      height: 20px;
+      cursor: pointer; }
+      header .header-access #burger .line1, header .header-access #burger .line2 {
+        width: 100%;
+        height: 5px;
+        border-radius: 7px; }
+
+.darkMode body {
+  background: #2A2A2A !important; }
+
+.darkMode .line1, .darkMode .line2 {
+  background: #FFFF; }
+
+.darkMode p, .darkMode a, .darkMode i {
+  color: #FFFF !important; }
