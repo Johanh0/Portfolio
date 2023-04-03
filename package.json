@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w src/scss -o src/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johanh0/Portfolio.git"
+  },
+  "author": "Johan Herrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Johanh0/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Johanh0/Portfolio#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
