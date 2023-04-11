@@ -1,7 +1,12 @@
-.darkMode {
+.dark-mode {
     // Background Dark
     body {
         background: map-get($map: $colors, $key: black-color) !important;
+    }
+
+    // Background Soft Dark
+    .menu {
+        background: map-get($map: $colors, $key: soft-black-color);
     }
 
     // Background Light
@@ -10,7 +15,7 @@
     }
 
     // Text Light
-    p, a, i {
+    p, a, i, h1, h2, h3 {
         color: map-get($map: $colors, $key: white-color) !important;
     }
 

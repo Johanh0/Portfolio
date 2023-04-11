@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Johanh0/Portfolio#readme",
   "dependencies": {
+    "gsap": "^3.11.5",
     "node-sass": "^8.0.0"
   }
 }

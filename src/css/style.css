@@ -21,17 +21,19 @@ li {
   background: #2A2A2A; }
 
 header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: fit-content;
   padding: 45px 55px;
-  font-size: 2rem; }
+  font-size: 2rem;
+  z-index: 10; }
   header .header-logo a {
     font-weight: bold; }
   header .header-links nav ul {
-    display: flex;
+    display: none;
     gap: 50px; }
   header .header-access {
     display: flex;
@@ -52,11 +54,86 @@ header {
         height: 5px;
         border-radius: 7px; }
 
-.darkMode body {
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; }
+  .hero .corner-circles {
+    position: absolute;
+    top: -60px;
+    left: -60px; }
+    .hero .corner-circles .circle1 {
+      width: 300px;
+      height: 300px;
+      background-color: transparent;
+      border: 2px solid #e7e7e758;
+      border-radius: 50%;
+      z-index: 10; }
+    .hero .corner-circles .circle2 {
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      width: 400px;
+      height: 400px;
+      background: transparent;
+      border: 2px solid #e7e7e758;
+      border-radius: 50%;
+      z-index: 0; }
+
+.menu {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #F5F5F5;
+  clip-path: circle(10px at 100% -10px); }
+  .menu .menu-social-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+    font-size: 4rem; }
+  .menu .menu-text {
+    max-width: 50%;
+    margin-right: 10px; }
+    .menu .menu-text h3 {
+      font-size: 4rem; }
+    .menu .menu-text p {
+      max-width: fit-content; }
+
+.hide {
+  overflow: hidden; }
+
+.dark-mode body {
   background: #2A2A2A !important; }
 
-.darkMode .line1, .darkMode .line2 {
+.dark-mode .menu {
+  background: #2C2C2C; }
+
+.dark-mode .line1, .dark-mode .line2 {
   background: #FFFF; }
 
-.darkMode p, .darkMode a, .darkMode i {
+.dark-mode p, .dark-mode a, .dark-mode i, .dark-mode h1, .dark-mode h2, .dark-mode h3 {
   color: #FFFF !important; }
+
+@media (min-width: 890px) {
+  html body header .header-access #burger {
+    display: none; }
+  html body header .header-links nav ul {
+    display: flex; }
+  html body .menu {
+    display: none; } }
+
+@media (max-width: 470px) {
+  html body .menu {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px; } }

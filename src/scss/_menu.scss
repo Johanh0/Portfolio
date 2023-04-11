@@ -1,0 +1,37 @@
+.menu {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: map-get($map: $colors
+    , $key: soft-white-color );
+    clip-path: circle(10px at 100% -10px);
+
+    .menu-social-links ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 10px;
+        font-size: map-get($map: $font-sizes, $key: title );
+    }
+
+    .menu-text {
+        max-width: 50%;
+        margin-right: 10px;
+        h3 {
+            font-size: map-get($map: $font-sizes, $key: title);
+        }
+
+        p {
+            max-width: fit-content;
+        }
+    }
+}
+
+.hide {
+    overflow: hidden;
+}

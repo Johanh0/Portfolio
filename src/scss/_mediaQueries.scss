@@ -1,0 +1,38 @@
+@media (min-width: 890px) {
+    // #burger {
+    //     display: none !important;
+    // }
+
+    // .header-links nav ul {
+    //     display: flex !important;
+    // }
+
+    html body {
+        header {
+            .header-access #burger {
+                display: none ;
+            }
+
+            .header-links nav ul {
+                display: flex ;
+            } 
+        }
+
+        // Menu of the header on mobile
+        .menu {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    html body {
+        .menu {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 50px;
+        }
+    }
+}
